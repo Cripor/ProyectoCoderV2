@@ -1,0 +1,18 @@
+[
+    {"id": 1, "nombre": "Mouse Razer", "precio": 4000, "img": "https://picsum.photos/id/323/200"},
+    {"id": 2, "nombre": "Mouse Logitech", "precio": 3000, "img": "https://picsum.photos/id/56/200"},
+    {"id": 3, "nombre": "Mouse T-Dagger", "precio": 3500, "img": "https://picsum.photos/id/14/200"},
+    {"id": 4, "nombre": "Teclado Razer", "precio": 5000, "img": "https://picsum.photos/id/38/200"},
+    {"id": 5, "nombre": "Teclado HyperX", "precio": 5000, "mg": "https://picsum.photos/id/128/200"},
+    {"id": 6, "nombre": "Teclado Logitech", "precio": 3200, "img": "https://picsum.photos/id/15/200"},
+    {"id": 7, "nombre": "Auriculares Sony", "precio": 3200, "img": "https://picsum.photos/id/42/200"},
+    {"id": 8, "nombre": "Auriculares Razer", "precio": 5500, "img": "https://picsum.photos/id/36/200"},
+    {"id": 9, "nombre": "Auriculares Vsg", "precio": 3500, "img": "https://picsum.photos/id/27/200"},
+    {"id": 10, "nombre": "Micrófono JBL", "precio": 9000, "img": "https://picsum.photos/id/83/200"},
+    {"id": 11, "nombre": "Micrófono Noga", "precio": 2500, "img": "https://picsum.photos/id/156/200"},
+    {"id": 12, "nombre": "Webcam Genius", "precio": 2900, "img": "https://picsum.photos/id/323/200"},
+    {"id": 13, "nombre": "Mouse Pad Redragon", "precio": 2200, "img": "https://picsum.photos/id/221/200"},
+    {"id": 14, "nombre": "Pendrive Kingston 64gb", "precio": 1500, "img": "https://picsum.photos/id/169/200"},
+    {"id": 15, "nombre": "Pendrive Kingston 128gb", "precio": 2500, "img": "https://picsum.photos/id/400/200"},
+    {"id": 16, "nombre": "Router TP-Link", "precio": 4000, "img": "https://picsum.photos/id/78/200"}
+]

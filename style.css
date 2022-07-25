@@ -1,0 +1,284 @@
+.card-img-top{
+    width: 200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+.contenedorNav{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end !important;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100% !important;
+    order: 2;
+}
+
+.search{
+    order: 1;
+}
+
+.perifericosPro{
+    position: relative;
+    height: 200px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/keyboard1.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(20% 0%, 100% 0, 84% 100%, 0 100%);
+}
+
+.filtro{
+    backdrop-filter: brightness(50%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(20% 0%, 100% 0, 84% 100%, 0 100%);
+    z-index: 99;
+}
+
+.perifericos{
+    position: absolute;
+    left: 10px;
+    z-index: 100;
+    padding: 50px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.marcas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.logo1{
+    width: 10%;
+}
+
+.logo2{
+    width: 100%;
+}
+
+.nav-link{
+    color: white !important;
+    text-align: center;
+}
+
+.carousel-item{
+    height: 650px;
+}
+
+.imagenCarousel{
+    width: 100%;
+    height: 100%;
+}
+
+.imgRel{
+  position: relative;
+  z-index: 0;
+}
+
+#products{
+  height: 600px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.boton{
+  position: absolute;
+  right: 350px;
+  top: 400px;
+  z-index: 1;
+  width: 250px;
+}
+
+.items{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 90px;
+  height: 160px;
+  margin: 20px;
+}
+
+.flex{
+  display: flex;
+  gap: 10px;
+  box-sizing:content-box
+}
+
+.elCarro{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 700px;
+  padding-top: 100px;
+  background-color: aqua;
+}
+
+.aumentarDisminuir{
+  display: flex;
+  flex-flow: column wrap;
+  border: 1px solid gray;
+}
+
+.intBoton{
+  font-family: Calibri;
+  font-size: 17px;
+}
+
+.gridCont{
+    display: flex;
+    justify-content: center;
+}
+
+.gridMarcas {  display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px 40px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "razer redragon nisuta t-dagger vsg"
+    ". logitech corsair hiperx .";
+  }
+  
+.razer { grid-area: razer;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .redragon { grid-area: redragon; 
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .nisuta { grid-area: nisuta; 
+    width: 120px;
+    height: 120px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .t-dagger { grid-area: t-dagger; 
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .vsg { grid-area: vsg; 
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .logitech { grid-area: logitech; 
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .corsair { grid-area: corsair; 
+    width: 130px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .hiperx { grid-area: hiperx; 
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.contenedorPC{
+    height: 350px;
+}
+
+.redes{
+    list-style: none;
+}
+
+.contenedorPC{
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+h1{ 
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.slideItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border: 3px solid black;
+    height: 300px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.slideItem:hover{
+    color: aqua;
+    transition: 0.3s;
+    width: 15%;
+    flex: none
+}
+
+.slideItemPC{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border: 3px solid black;
+    width: 200%;
+    height: 300px;
+}
