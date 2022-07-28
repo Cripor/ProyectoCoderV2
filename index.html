@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href="./style.css">
     <title>Periféricos Gamer</title>
@@ -26,7 +28,7 @@
                 <div class="collapse navbar-collapse d-lg-flex flex-lg-column align-center" id="navbarSupportedContent">
                     <ul class="navbar-nav p-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="#filtrosProd">Buscar por categoría</a>
+                            <a class="nav-link" href="#carouselOwl">Buscar por categoría</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./productos.html">Catalogo completo</a>
@@ -102,33 +104,35 @@
         </section>
 
 
-<!-- Las siguientes secciones van a ser parte de un carrousel con filtros que te lleven a la tienda con los filtros aplicados-->
 
-        <section class="PC" id="filtrosProd">
-            <div class="contenedorPC container bg-primary mt-5">
-                <a href="./productos.html" class="slideItem"><div>Teclados</div></a>
-                <div class="slideItem">Mouses</div>
-                <div class="slideItem">Auriculares</div>
-                <div class="slideItem">Pads</div>
-                <div class="slideItem">Cámaras web y micrófonos</div>
-                <div class="slideItem">Modems</div>
-                <div class="slideItem">Pendrives y discos</div>
-                <div class="slideItem">Ver todo</div>
-                <div class="slideItemPC ms-2"><h1>PC</h1></div>
+    
+        <section id="carouselOwl">
+            <div class="container carousel-alignment">
+                <div><i class="fa-solid fa-arrow-left-long"></i></div>
+                <div class="owl-carousel container loop mt-5">
+                    <div class="inner-prod-width" > <h4 class="slideItem">Mouses</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Auriculares</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Pads</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Cámaras web y micrófonos</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Modems</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Pendrives y discos</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Ver todo</h4> </div>
+                </div>
+                <div><i class="fa-solid fa-arrow-right-long"></i></div>
             </div>
-        </section>
 
-        <section class="consolas">
-            <div class="contenedorPC container bg-primary mt-5">
-                <div class="slideItemPC me-2"><h1>consolas</h1></div>
-                <div class="slideItem">Joysticks</div>
-                <div class="slideItem">Complementos</div>
-                <div class="slideItem">Auriculares</div>
-                <div class="slideItem">Fundas</div>
-                <div class="slideItem">Cámaras y micrófonos</div>
-                <div class="slideItem">Gift cards</div>
-                <div class="slideItem">Memorias</div>
-                <div class="slideItem">Ver todo</div>
+            <div class="container carousel-alignment">
+                <div><i class="fa-solid fa-arrow-left-long"></i></div>
+                <div class="owl-carousel container loop mt-5">
+                    <div class="inner-prod-width" > <h4 class="slideItem">Joysticks</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Complementos</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Auriculares</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Fundas</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Cámaras y micrófonos</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Memorias</h4> </div>
+                    <div class="inner-prod-width" > <h4 class="slideItem">Ver todo</h4> </div>
+                </div>
+                <div><i class="fa-solid fa-arrow-right-long"></i></div>
             </div>
         </section>
     </main>
@@ -152,9 +156,10 @@
         </div>
     </footer>
 
-<!--     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/javascript.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

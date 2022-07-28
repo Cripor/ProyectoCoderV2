@@ -141,3 +141,7 @@ const btnAccion = e => {
         mostrarCart();
     e.stopPropagation()
 }
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
