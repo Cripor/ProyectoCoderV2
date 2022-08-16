@@ -1,10 +1,18 @@
 const cards = document.getElementById("cards");
 const items = document.getElementById("items");
 const footer = document.getElementById("footer");
+const carroCheckout = document.getElementById("carroCheckout");
+const footerCheckout = document.getElementById("footerCheckout");
+const footerCantidad = document.getElementById("footerCantidad")
 const template = document.getElementById("template-card").content;
 const templateFooter =  document.getElementById("template-footer").content;
 const templateCarrito = document.getElementById("template-carrito").content;
+const templateCheckout = document.getElementById("template-checkout").content;
+const templateFooterCheckout = document.getElementById("template-footer-checkout")
 const fragment = document.createDocumentFragment()
+const fragment2 = document.createDocumentFragment()
+const btnForm = document.querySelector(".btn-form")
+const suscripcion = document.querySelector(".btn-primary");
 let cart = {}
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -15,9 +23,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+suscripcion.addEventListener("click", (e) => {
+    let res = prompt("Ingrese su correo electrónico");
+    if (res != "") {
+        alert("¡Felicidades! Se ha suscrito a nuestras novedades satisfactoriamente")
+    } else {
+        while (res == "") {
+            let res = prompt("Ingrese su correo electrónico")
+            if (res != ""){
+                alert("¡Felicidades! Se ha suscrito a nuestras novedades satisfactoriamente")
+                break
+            }
+        }
+    }
+    e.stopImmediatePropagation()
+})
+
 cards.addEventListener("click", e => {
-    addToCart(e)
-    Swal.fire('Producto añadido al carrito')
+    addToCart(e);
 });
 
 items.addEventListener('click', e => {
@@ -37,9 +60,7 @@ const fetchData = async () => {
 
 //Mostrar productos:
 const mostrarCards = data => {
-    //console.log(data)
     data.forEach(producto => {
-        //console.log(producto);
         template.querySelector('#temp-title').textContent = producto.nombre;
         template.querySelector('#temp-p').textContent = producto.precio;
         template.querySelector('#temp-img').setAttribute( 'src', producto.img );
@@ -51,9 +72,9 @@ const mostrarCards = data => {
 }
 
 const addToCart = e => {
-
     if (e.target.classList.contains("btn-dark")) {
-        setCart(e.target.parentElement)
+        setCart(e.target.parentElement);
+        Swal.fire('Producto añadido al carrito');
     };
     e.stopPropagation();
 }
@@ -78,6 +99,7 @@ const setCart = object => {
 const mostrarCart = () => {
     console.log(cart);
     items.innerHTML = ''
+    carroCheckout.innerHTML = ''
     Object.values(cart).forEach(product => {
         templateCarrito.querySelector("th").textContent = product.id;
         templateCarrito.querySelectorAll("td")[0].textContent = product.name;
@@ -85,11 +107,19 @@ const mostrarCart = () => {
         templateCarrito.querySelector(".btn-info").dataset.id = product.id;
         templateCarrito.querySelector(".btn-danger").dataset.id = product.id;
         templateCarrito.querySelector("#totalCarrito").textContent = product.quantity * product.price;
-
         const clone = templateCarrito.cloneNode(true);
         fragment.appendChild(clone);
     })
     items.appendChild(fragment)
+
+    Object.values(cart).forEach(product => {
+        templateCheckout.querySelectorAll("td")[0].textContent = product.name;
+        templateCheckout.querySelectorAll("td")[1].textContent = "Cantidad: " + product.quantity;
+        templateCheckout.querySelector("#totalCarrito").textContent = product.quantity * product.price;
+        const clone2 = templateCheckout.cloneNode(true);
+        fragment2.appendChild(clone2);
+    })
+    carroCheckout.appendChild(fragment2)
 
     mostrarFooter()
 
@@ -98,6 +128,8 @@ const mostrarCart = () => {
 
 const mostrarFooter = () => {
     footer.innerHTML = ''
+    footerCheckout.innerHTML = ''
+    footerCantidad.innerHTML = ''
     if (Object.keys(cart).lenght === 0) {
         footer.innerHTML = '<th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>';
         return
@@ -106,12 +138,17 @@ const mostrarFooter = () => {
     const totalCantidad = Object.values(cart).reduce((acc, {quantity}) => acc + quantity,0);
     const totalPrecio = Object.values(cart).reduce((acc, {quantity, price}) => acc + quantity * price,0);
 
-    templateFooter.querySelectorAll('td')[0].textContent = totalCantidad
+    templateFooter.querySelector('#footer-cant').textContent = totalCantidad
     templateFooter.querySelector('#totalPrice').textContent = totalPrecio
 
     const clone = templateFooter.cloneNode(true);
     fragment.appendChild(clone)
     footer.appendChild(fragment)
+
+    console.log(footerCheckout);
+
+    footerCheckout.innerText = "Total: " + `$${totalPrecio}`
+    footerCantidad.innerText = totalCantidad
 
     const vaciar = document.getElementById('vaciar-carrito');
     vaciar.addEventListener('click', () => {
@@ -142,6 +179,33 @@ const btnAccion = e => {
     e.stopPropagation()
 }
 
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
+btnForm.addEventListener("click", e => {
+    Swal.fire({
+        title: '¿Desea confirmar la compra?',
+        text: "Esta operación es irreversible",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Si, confirmar compra'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+            'Confirmación exitosa',
+            'Su compra ha sido confirmada',
+            '¡Éxito!',
+            window.location.href = "../gracias.html",
+            localStorage.clear(),
+            )
+        }
+    })
+    e.stopPropagation()
+})
+
+console.log(btnForm);
+
+/* let item = document.createElement("div");
+item.innerHTML = mostrarCart();
+item.className = "contenedores"
+ carroCheckout.append(item)*/
+

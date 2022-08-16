@@ -158,7 +158,7 @@
     "razer redragon nisuta t-dagger vsg"
     ". logitech corsair hiperx .";
   }
-  
+
 .razer { grid-area: razer;
     width: 120px;
     height: 120px;
@@ -259,14 +259,102 @@ h1{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
-    background-color: rgb(59, 59, 59);
-    color: white;
+    color: crimson;
     border: 3px solid black;
-    height: 330px;
+    height: 380px;
     transition: 0.2s;
     text-decoration: none;
     width: 280px;
+}
+
+.mo{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.3)), url(./images/PC/logitech-g-pro-x-superlight-g692f974c6_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.au{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.3)), url(./images/PC/fortnite-g177f141ed_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.te{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.3)), url(./images/PC/keyboard-gc86b86275_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.pa{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.5)), url(./images/PC/led_mouse_pad_mockup_with_mouse.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.caw{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.5)), url(./images/PC/waldemar-brandt-VAoSKP_ocN0-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.mod{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.5)), url(./images/PC/modem-g10e1e597c_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.pen{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.5)), url(./images/PC/powerful-external-battery-with-usb-wire.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.todo{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.3)), url(./images/gamer2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.jo{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.3)), url(./images/Consola/controller-gaaf902d63_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.com{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.3)), url(./images/Consola/triyansh-gill-DYDIF2OuavM-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.aur{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.3)), url(./images/Consola/hello-i-m-nik-Gr7Bsolw5EU-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.cov{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.2)), url(./images/Consola/fabio-silva-nmTm7knUnqs-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.ccam{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.2)), url(./images/Consola/sam-pak-X6QffKLwyoQ-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.mem{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.2)), url(./images/Consola/computer-accessories-gaaeb3b621_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.todoCons{
+  background:linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.3)), url(./images/joystick-xbox1.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .inner-prod-width{
@@ -274,6 +362,21 @@ h1{
   align-items: center;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
+}
+
+.owl-carousel{
+  width: 90%;
+}
+
+.linkTodo{
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.linkTodo:hover{
+  transition: 0.5s;
+  color: aqua;
 }
 
 /* .slideItem:hover{
@@ -295,4 +398,123 @@ h1{
     border: 3px solid black;
     width: 200%;
     height: 300px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn-form {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn-form:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width:576px) and (max-width: 1000px) {
+  .gridMarcas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .boton{
+    position: absolute;
+    right: 250px;
+    top: 400px;
+    z-index: 1;
+    width: 250px;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .gridMarcas{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 20px;
+  }
+  .boton{
+    position: absolute;
+    right: 150px;
+    top: 400px;
+    z-index: 1;
+    width: 200px;
+  }
 }

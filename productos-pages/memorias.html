@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Memorias</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black container-fluid">
+            <div class="container-fluid">
+                <div class="logo1">
+                    <img src="../images/pp-logo.png" alt="logo-perifericos-pro" class="logo2">
+                </div>
+                <div class="perifericosPro">
+                    <span class="filtro"></span>
+                    <h1 class="perifericos">Perifericos Pro</h1>
+                </div>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex flex-lg-column align-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav p-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Buscar por categoría</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../productos.html">Catalogo completo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ayuda.html">Ayuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex search" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-5">
+        <h1>Catalogo:</h1>
+        <hr>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Acción</th>
+                <th scope="col">Total</th>
+            </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+            <tr id="footer">
+                <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+            </tr>
+            </tfoot>
+        </table>
+
+
+        <div class="row" id="cards"></div>
+        </div>
+
+    <!--Templates -->
+
+        <template id="template-card">
+        <div class="col-12 mb-2 col-md-3">
+            <div class="card">
+            <div class="card-body">
+                <img src="" href="" id="temp-img" class="card-img-top"></img>
+                <h5 id="temp-title">Titulo</h5>
+                <p id="temp-p">precio</p>
+                <button class="btn btn-dark" id="temp-button">Comprar</button>
+            </div>
+            </div>
+        </div>
+        </template>
+
+
+        <template id="template-carrito">
+            <tr>
+            <th scope="row">id</th>
+            <td>Café</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    -
+                </button>
+            </td>
+            <td>$ <span id="totalCarrito">500</span></td>
+            </tr>
+        </template>
+
+
+        <template id="template-footer">
+            <th scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                    Vaciar carrito
+                </button>
+                <a onclick="window.location.href = '../productos.html#formCheckout';">
+                    <button class="btn btn-info btn-sm">
+                        Ir a comprar
+                    </button>
+                </a>
+            </td>
+            <td class="font-weight-bold">$ <span id="totalPrice">5000</span></td>
+        </template>
+
+    </main>
+
+    <footer>
+        <div class="card text-center mt-5 bg-black text-white">
+            <div class="card-header">
+                Perifericos pro ®
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-center">
+                    <ul class="d-flex justify-content-evenly align-center p-0 mb-2 w-25 redes fs-3">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-whatsapp"></i></li>
+                    </ul>
+                </div>
+                <p class="card-text">Haz click en Suscripción para enterarte todas las ofertas y novedades</p>
+                <a href="#" class="btn btn-primary">Suscripción</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/filtrados/memorias.js"></script>
+    <script src="../bootstrap.min.js"></script>
+</body>
+</html>

@@ -37,13 +37,9 @@
                             <a class="nav-link" href="./ayuda.html">Ayuda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex search" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
@@ -61,19 +57,19 @@
                     <div class="carousel-item active">
                         <img src="./images/mouse1.jpg" class="d-block w-100 imagenCarousel imgRel" alt="...">
                         <div class="boton">
-                            <button type="button" class="btn btn-info intBoton"><em>Vé los últimos y mejores mouses del mercado</em></button>
+                            <a href="#cards"><button type="button" class="btn btn-info intBoton mouses"><em>Vé los últimos y mejores mouses del mercado</em></button></a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./images/keyboard2.jpg" class="d-block w-100 imagenCarousel imgRel" alt="...">
                         <div class="boton">
-                            <button type="button" class="btn btn-info intBoton"><em>Todo en teclados mecánicos</em></button>
+                            <a href="#cards"><button type="button" class="btn btn-info intBoton teclado"><em>Todo en teclados mecánicos</em></button></a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./images/mouse2.jpg" class="d-block w-100 imagenCarousel imgRel" alt="...">
                         <div class="boton">
-                            <a href="./pages/productos.html"><button type="button" class="btn btn-info intBoton"><em>Lo que busques. Encontralo en nuestro catalogo</em></button></a>
+                            <a href="./productos.html"><button type="button" class="btn btn-info intBoton"><em>Lo que busques. Encontralo en nuestro catalogo</em></button></a>
                         </div>
                     </div>
                 </div>
@@ -107,37 +103,57 @@
 
     
         <section id="carouselOwl">
-            <div class="container carousel-alignment">
-                <div><i class="fa-solid fa-arrow-left-long"></i></div>
+            <h2 class="container mt-3">PC</h2>
+            <div class="container carousel-alignment mt-1">
+                <div><i class="fa-solid fa-arrow-left-long d-flex justify-content-start"></i>Deslice</div>
                 <div class="owl-carousel container loop mt-5">
-                    <div class="inner-prod-width" > <h4 class="slideItem">Mouses</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Auriculares</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Pads</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Cámaras web y micrófonos</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Modems</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Pendrives y discos</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Ver todo</h4> </div>
+                    <div class="inner-prod-width mouse" ><a href="#cards" class="linkTodo slideItem mo"><h3>Mouses</h3></a></div>
+                    <div class="inner-prod-width auriculares" > <a href="#cards" class="linkTodo slideItem au"><h3>Auriculares</h3></a> </div>
+                    <div class="inner-prod-width teclados"> <a href="#cards" class="linkTodo slideItem te"><h3>Teclados</h3></a> </div>
+                    <div class="inner-prod-width pads"> <a href="#cards" class="linkTodo slideItem pa"><h3>Pads</h3></a> </div>
+                    <div class="inner-prod-width cams-mics"> <a href="#cards" class="linkTodo slideItem caw"><h3>Cámaras web y micrófonos</h3></a> </div>
+                    <div class="inner-prod-width modems"> <a href="#cards" class="linkTodo slideItem mod"><h3>Modems</h3></a> </div>
+                    <div class="inner-prod-width pendrives"> <a href="#cards" class="linkTodo slideItem pen"><h3>Pendrives y discos</h3></a> </div>
+                    <div class="inner-prod-width"> <a href="./productos.html" class="linkTodo slideItem todo"><h3>Ver todo</h3></a> </div>
                 </div>
-                <div><i class="fa-solid fa-arrow-right-long"></i></div>
+                <div><i class="fa-solid fa-arrow-right-long d-flex justify-content-end"></i>Deslice</div>
             </div>
 
-            <div class="container carousel-alignment">
-                <div><i class="fa-solid fa-arrow-left-long"></i></div>
+            <h2 class="container mt-3">Consolas</h2>
+            <div class="container carousel-alignment mt-1">
+                <div><i class="fa-solid fa-arrow-left-long d-flex justify-content-start"></i>Deslice</div>
                 <div class="owl-carousel container loop mt-5">
-                    <div class="inner-prod-width" > <h4 class="slideItem">Joysticks</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Complementos</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Auriculares</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Fundas</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Cámaras y micrófonos</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Memorias</h4> </div>
-                    <div class="inner-prod-width" > <h4 class="slideItem">Ver todo</h4> </div>
+                    <div class="inner-prod-width joysticks"> <a href="#cards" class="linkTodo slideItem jo"><h3>Joysticks</h3></a> </div>
+                    <div class="inner-prod-width complementos" > <a href="#cards" class="linkTodo slideItem com"><h3>Complementos</h3></a> </div>
+                    <div class="inner-prod-width auriculares2" > <a href="#cards" class="linkTodo slideItem aur"><h3>Auriculares</h3></a> </div>
+                    <div class="inner-prod-width fundas"> <a href="#cards" class="linkTodo slideItem cov"><h3>Fundas</h3></a> </div>
+                    <div class="inner-prod-width camaras-mics"> <a href="#cards" class="linkTodo slideItem ccam"><h3>Cámaras y micrófonos</h3></a> </div>
+                    <div class="inner-prod-width memoria"> <a href="#cards" class="linkTodo slideItem mem"><h3>Memorias</h3></a> </div>
+                    <div class="inner-prod-width"> <a href="./productos.html" class="linkTodo slideItem todoCons"><h3>Ver todo</h3></a> </div>
                 </div>
-                <div><i class="fa-solid fa-arrow-right-long"></i></div>
+                <div><i class="fa-solid fa-arrow-right-long d-flex justify-content-end"></i>Deslice</div>
             </div>
         </section>
     </main>
 
-    
+    <template id="template-card">
+        <div class="col-12 mb-2 col-md-3">
+            <div class="card">
+            <div class="card-body">
+                <img src="" href="" id="temp-img" class="card-img-top"></img>
+                <h5 id="temp-title">Titulo</h5>
+                <p id="temp-p">precio</p>
+                <button class="btn btn-dark" id="temp-button"><a class="linkTodo" id="linkBtn">Ver Productos</a></button>
+            </div>
+            </div>
+        </div>
+    </template>
+
+    <div class="d-flex justify-content-center mt-3">
+        <div class="row container" id="cards"></div>
+        </div>
+    </div>
+
     <footer>
         <div class="card text-center mt-5 bg-black text-white">
             <div class="card-header">
@@ -158,6 +174,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/owlapi.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
