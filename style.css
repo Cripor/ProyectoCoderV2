@@ -259,12 +259,21 @@ h1{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: crimson;
-    border: 3px solid black;
+    color: white;
+    border: 1px solid black;
     height: 380px;
     transition: 0.2s;
     text-decoration: none;
     width: 280px;
+}
+
+.back{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: brightness(60%);
+  width: 100%;
+  height: 105%;
 }
 
 .mo{
